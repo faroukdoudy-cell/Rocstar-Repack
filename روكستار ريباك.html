@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockstar Repack | تحميل ألعاب روكستار</title>
+    
+    <!-- أيقونة النافذة والتبويب في متصفح جوجل (Favicon) -->
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/vzR0y6G/logo.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/vzR0y6G/logo.jpg">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/vzR0y6G/logo.jpg">
+
+    <!-- الكلمات المفتاحية لمساعدتك في الظهور على محرك البحث Google -->
+    <meta name="description" content="موقع Rockstar Repack لتحميل ألعاب روكستار كاملة وبأحجام مضغوطة بروابط مباشرة By Elaibi Youcef">
+    <meta name="keywords" content="Rockstar Repack, GTA SA, RDR2, GTA V, Max Payne, Elaibi Youcef, ألعاب روكستار مضغوطة">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1f2833;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #f39c12;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .site-logo {
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid #f39c12;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 900;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: #f39c12;
+        }
+
+        .badge {
+            background-color: #f39c12;
+            color: #1f2833;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, #1f2833 0%, #0b0c10 100%);
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #66fcf1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .game-card {
+            background-color: #1f2833;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #45a29e;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            border-color: #f39c12;
+            box-shadow: 0 8px 25px rgba(243, 156, 18, 0.3);
+        }
+
+        .game-img {
+            height: 320px;
+            background-color: #15181e;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+
+        .size-tag {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #f39c12;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+            border: 1px solid #f39c12;
+        }
+
+        .game-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .game-info h3 {
+            color: #fff;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .game-info p {
+            color: #c5c6c7;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn-download {
+            display: block;
+            text-align: center;
+            background-color: #f39c12;
+            color: #0b0c10;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #1f2833;
+            color: #c5c6c7;
+            margin-top: 50px;
+            border-top: 1px solid #45a29e;
+            font-size: 15px;
+        }
+
+        .signature {
+            color: #f39c12;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 5px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <!-- الشعار الخاص بك -->
+            <img src="https://i.ibb.co/vzR0y6G/logo.jpg" alt="RR Logo" class="site-logo">
+            <div class="logo">ROCKSTAR <span>REPACK</span></div>
+        </div>
+        <div class="badge">ألعاب مضغوطة Fast & Light</div>
+    </header>
+
+    <div class="hero">
+        <h1>تحميل ألعاب Rockstar بحجم خفيف ومضغوط</h1>
+        <p>مجموعة من أفضل ألعاب روكستار بروابط مباشرة وسريعة</p>
+    </div>
+
+    <div class="container">
+        <div class="games-grid">
+
+            <!-- 1. GTA San Andreas -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/12120/header.jpg');">
+                    <span class="size-tag">الحجم: 570 MB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>GTA San Andreas</h3>
+                        <p>نسخة مضغوطة بحجم خفيف جداً، كاملة وتعمل بسرعة على الأجهزة الضعيفة.</p>
+                    </div>
+                    <a href="https://www.mediafire.com/folder/ec6ej6sj4bnd5/GTA+San+Andreas+[repack]" class="btn-download" target="_blank">تحميل GTA SA</a>
+                </div>
+            </div>
+
+            <!-- 2. GTA Vice City -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/12110/header.jpg');">
+                    <span class="size-tag">الحجم: 230 MB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>GTA Vice City</h3>
+                        <p>النسخة الكلاسيكية فائقة الضغط، مجهزة للعمل المباشر على جميع الحواسيب.</p>
+                    </div>
+                    <a href="https://files.alltypehacks.in/c5fc69e609af7d2e" class="btn-download" target="_blank">تحميل Vice City</a>
+                </div>
+            </div>
+
+            <!-- 3. Red Dead Redemption 1 -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/2668510/header.jpg');">
+                    <span class="size-tag">الحجم: 5.5 GB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>Red Dead Redemption 1</h3>
+                        <p>نسخة ممتازة ومضغوطة لقصة جون مارستون كاملة وبأعلى أداء ممكن.</p>
+                    </div>
+                    <a href="https://fitgirl-repacks.site/red-dead-redemption-pc/" class="btn-download" target="_blank">تحميل RDR 1</a>
+                </div>
+            </div>
+
+            <!-- 4. Red Dead Redemption 2 -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg');">
+                    <span class="size-tag">الحجم: 68 GB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>Red Dead Redemption 2</h3>
+                        <p>ملحمة الغرب الأمريكي كاملة مع أحدث التحديثات والتفعيل الذاتي.</p>
+                    </div>
+                    <a href="https://fitgirl-repacks.site/red-dead-redemption-2/" class="btn-download" target="_blank">تحميل RDR 2</a>
+                </div>
+            </div>
+
+            <!-- 5. GTA V -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg');">
+                    <span class="size-tag">الحجم: 51 GB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>Grand Theft Auto V</h3>
+                        <p>نسخة عالمية كاملة مع طور القصة وجميع التحديثات بحجم مضغوط.</p>
+                    </div>
+                    <a href="https://fitgirl-repacks.site/grand-theft-auto-v/" class="btn-download" target="_blank">تحميل GTA V</a>
+                </div>
+            </div>
+
+            <!-- 6. Max Payne 1 -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/12140/header.jpg');">
+                    <span class="size-tag">الحجم: 540 MB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>Max Payne 1</h3>
+                        <p>الجزء الأول الكلاسيكي من أسطورة الأكشن والـ Bullet Time.</p>
+                    </div>
+                    <a href="https://files.alltypehacks.in/0b61db37835f6af1" class="btn-download" target="_blank">تحميل Max Payne 1</a>
+                </div>
+            </div>
+
+            <!-- 7. Max Payne 2 -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/12150/header.jpg');">
+                    <span class="size-tag">الحجم: 400 MB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>Max Payne 2</h3>
+                        <p>شريط الأكشن والغموض الشهير بحجم صغير وأداء سريع وبدون مشاكل.</p>
+                    </div>
+                    <a href="https://files.alltypehacks.in/7fa797b3bd8c37f8" class="btn-download" target="_blank">تحميل Max Payne 2</a>
+                </div>
+            </div>
+
+            <!-- 8. Max Payne 3 -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/204100/header.jpg');">
+                    <span class="size-tag">الحجم: 13 GB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>Max Payne 3</h3>
+                        <p>النسخة الكاملة من مغامرة ماكس باين في البرازيل بأعلى إثارة ورسومات.</p>
+                    </div>
+                    <a href="https://fitgirl-repacks.site/max-payne-3-complete-edition/" class="btn-download" target="_blank">تحميل Max Payne 3</a>
+                </div>
+            </div>
+
+            <!-- 9. GTA IV -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/12210/header.jpg');">
+                    <span class="size-tag">الحجم: 4.1 GB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>GTA IV Repack</h3>
+                        <p>مضغوطة باحترافية عالية مع المحافظة على جودة عالم نيكو بيليك والتفاصيل.</p>
+                    </div>
+                    <a href="https://uptogames.net/category/download-computer-games/#https://s2.uptogames.net/do.php?down=Grand-Theft-Auto-4.rar" class="btn-download" target="_blank">تحميل GTA IV</a>
+                </div>
+            </div>
+
+            <!-- 10. Bully: Scholarship Edition -->
+            <div class="game-card">
+                <div class="game-img" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/12200/header.jpg');">
+                    <span class="size-tag">الحجم: 2.1 GB</span>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <h3>Bully: Scholarship Edition</h3>
+                        <p>لعبة المدرسة والمغامرات الشهيرة كاملة وجاهزة للتثبيت الفوري.</p>
+                    </div>
+                    <a href="https://archive.org/details/bully.-scholarship-edition-r.-g.-chanics" class="btn-download" target="_blank">تحميل Bully</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - Rockstar Repack</p>
+        <span class="signature">By Elaibi Youcef</span>
+    </footer>
+
+</body>
+</html><meta name="description" content="تحميل أفضل ألعاب روكستار المضغوطة بروابط مباشرة وسريعة By Elaibi Youcef">
+<meta name="keywords" content="Rockstar Repack, GTA SA, RDR2, GTA V, Elaibi Youcef, تحميل ألعاب روكستار">
